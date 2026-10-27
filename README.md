@@ -67,6 +67,7 @@ The whole plugin is one small hooks module, [`hooks/register.ts`](hooks/register
 
 - A `classic.Notification` hook plays the sound when the notification type is one that means "waiting on you".
 - Two `tool.call` hooks play it just before `AskUserQuestion` and `ExitPlanMode` run.
+- It chimes **once per wait**: when a wait starts it plays, then stays quiet (even if Claude Code raises more notifications for the same wait) until you answer, send a message, or Claude starts working again.
 - The sound runs in the background with `afplay`. Every hook passes the event straight through (`next(e)`), and any failure is swallowed, so the plugin can never block, slow down or change what Claude does.
 
 The plugin does not bundle Apple's sound file. It plays the copy already on your Mac.
