@@ -1,0 +1,6 @@
+{
+  "name": "approval-beeper",
+  "description": "A chime when Claude Code is waiting on you",
+  "owner": { "name": "Omar Faruk" },
+  "plugins": [{ "name": "approval-beeper", "source": "./" }]
+}

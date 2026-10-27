@@ -1,0 +1,7 @@
+{
+  "name": "approval-beeper",
+  "version": "0.1.0",
+  "description": "Plays the macOS Glass sound when Claude Code needs your approval, asks a question, or is waiting for input",
+  "author": { "name": "Omar Faruk" },
+  "license": "MIT"
+}
