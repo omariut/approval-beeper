@@ -79,6 +79,7 @@ The plugin does not bundle Apple's sound file. It plays the copy already on your
 | No sound at all | Check your Mac isn't muted, and run `afplay /System/Library/Sounds/Glass.aiff` in a terminal to confirm audio works. |
 | Still no sound | Run `/plugin` and make sure `approval-beeper` is enabled, then restart Claude Code. |
 | Sound plays **twice** | You also have a beep hook in `~/.claude/settings.json` (or another sound plugin). Remove one of them. |
+| A change or update has no effect | Claude Code runs a cached copy of the plugin. Run `claude plugin marketplace update approval-beeper` then `claude plugin update approval-beeper@approval-beeper`, and restart Claude Code. |
 | No sound for permission prompts | In auto mode most actions are approved without a prompt, so there's nothing to beep for. Questions and idle still chime. |
 
 ## License
